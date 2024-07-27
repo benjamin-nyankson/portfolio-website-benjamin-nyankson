@@ -1,16 +1,17 @@
 <template>
-    <div class="grid grid-cols-1 gap-3 w-full" :class="breakPoints">
-        <slot></slot>
+    <div class="
+    grid-control
+      ">
+      <slot></slot>
     </div>
-</template>
-
-<script setup lang="ts">
-defineProps({
-    breakPoints: {
-        type: String,
-        default:"md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-    }
-})
-</script>
-
-<style scoped></style>
+  </template>
+  
+  <style scoped>
+  .grid-control {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(186.189px, 1fr));
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-top: 24px;
+  }
+  </style>
