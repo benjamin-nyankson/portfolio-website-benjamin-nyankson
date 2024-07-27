@@ -1,25 +1,32 @@
 <script setup lang="ts">
-import TopNavBar from "@/components/navbar/TopNavBar.vue"
+import TopNavBar from "@/components/navbar/TopNavBar.vue";
 import { RouterView } from 'vue-router';
 import AlertComponent from "./components/alert/AlertComponent.vue";
 import { useAlertSystem } from "./stores/store";
-const alert = useAlertSystem()
+
+const alert = useAlertSystem();
 </script>
 
 <template>
-  <div class="w-3/4 mt-10 m-auto">
-    <TopNavBar />
-    <TransitionGroup name="list" tag="div">
-
-<AlertComponent v-if="alert.open"/>
-</TransitionGroup>
-    <RouterView/>
+  <div class="relative min-h-screen">
+    <div class="absolute inset-0 bg-cover bg-center opacity-50 bg-image"></div>
+    <div class="relative z-10 w-3/4 m-auto">
+      <TopNavBar />
+      <TransitionGroup name="list" tag="div">
+        <AlertComponent v-if="alert.open"/>
+      </TransitionGroup>
+      <RouterView/>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.bg-image {
+  background-image: url(../src/assets/desktop-wallpaper-portfolio.JPG);
+}
+
 .primary {
-  color: #FD6F00
+  color: #FD6F00;
 }
 
 .list-enter-active,
