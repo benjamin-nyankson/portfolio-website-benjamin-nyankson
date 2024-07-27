@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="$emit('submit')" :class="disabled ? 'flex bg-[#f39852] cursor-not-allowed' :'bg-[#FD6F00]'" class=" py-2 px-2 text-[#fff] rounded-md">
+        <button @click="$emit('submit')" :disabled="disabled" :class="disabled ? 'flex bg-[#f39852] cursor-not-allowed' :'bg-[#FD6F00]'" class=" py-2 px-2 text-[#fff] rounded-md">
             <LoaderIcon v-if="loading"/>
             {{ text }}
 
