@@ -17,7 +17,7 @@
         </div>
         <div class="w-full flex items-center flex-col gap-3 sm:hidden md:hidden lg:flex">
             <img src="../../assets//images//profile_img.jpeg" alt="">
-            <img src="../../assets//images//social.png" alt="">
+          <SocialMedia/>
         </div>
         <ModalComponent :open="open" title="Contact Me" @close="open = false">
 
@@ -43,6 +43,7 @@ import InputField from '../inpputs/InputField.vue';
 import TextArea from '../inpputs/TextArea.vue';
 import axios from 'axios';
 import { useAlertSystem } from '@/stores/store';
+import SocialMedia from '../SocialMedia.vue';
 
 const open = ref(false);
 const name = ref("")
