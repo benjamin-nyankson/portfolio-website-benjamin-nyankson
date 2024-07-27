@@ -5,5 +5,5 @@ export const navBarItems = [
   { id: 4, name: "Projects", path:"/projects" },
   // { id: 5, name: "Testimonials" },
   // { id: 6, name: "Contact" },
-  // { id: 7, name: "Download cv" },
+  { id: 7, name: "Download cv", path:"download" },
 ];
