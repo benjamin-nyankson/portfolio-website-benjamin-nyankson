@@ -1,8 +1,9 @@
 <template>
-    <div class="mt-32">    
+    <div class="mt-10">
+        <h1>MY PROJECTS</h1>
         <GridComponent>
             <div v-for="project in listOfProjects" :key="project.name">
-                <ProjectCard :title="project.name" :image="project.type==='react'? ReactImage:VueImage" :link="project.link" />
+                <ProjectCard :title="project.name" :imgUrl="project.img_url" :link="project.link" />
             </div>
         </GridComponent>
     </div>
@@ -12,17 +13,20 @@
 import { ref } from 'vue';
 import GridComponent from '../GridComponent.vue';
 import ProjectCard from '../ProjectCard.vue';
-import ReactImage from '../ReactImage.vue';
-import VueImage from '../VueImage.vue';
+import learn from "@/assets/e-lerning.png";
+import youtube from "@/assets/youtube-clone.png"
+import eCommerce from "@/assets/e-commerce.png"
+import vueImg from "@/assets/vue-image.png"
 
 const listOfProjects = ref([
-    { name: "Form Authentication", id: 1, type: "Vue", link: "https://e-learning-dashboard-31k8xgwp6-nyankson-benjamin.vercel.app" },
-    { name: "Form Authentication", id: 1, type: "vue", link: "" },
-    { name: "Form Authentication", id: 1, type: "vue", link: "" },
-    { name: "Form Authentication", id: 1, type: "vue", link: "" },
-    { name: "Form Authentication", id: 1, type: "vue", link: "" },
-    { name: "Form Authentication", id: 1, type: "vue", link: "" },
+    { name: "E-learning site", id: 1, type: "Vue", img_url:learn, link: "https://e-learning-dashboard-31k8xgwp6-nyankson-benjamin.vercel.app" },
+    { name: "Mini E-commerce site", id: 2, type: "vue", img_url:eCommerce, link: "https://e-commerce-app-vue.vercel.app/" },
+    { name: "Youtube Clone", id: 3, type: "vue", img_url:youtube, link: "https://youtube-clone-k033hvxcs-nyankson-benjamin.vercel.app/", },
+    // { name: "Form Authentication", id: 4, type: "vue", img_url:vueImg, link: "" },
+    // { name: "Form Authentication", id: 5, type: "vue", img_url:vueImg, link: "" },
+    // { name: "Form Authentication", id: 6, type: "vue", img_url:vueImg, link: "" },
 ])
+
+
 </script>
 
-<style scoped></style>
