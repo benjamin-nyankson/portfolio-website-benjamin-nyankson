@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="text-[#0a192f]">
   
       <!-- Modal -->
       <div v-if="open"
