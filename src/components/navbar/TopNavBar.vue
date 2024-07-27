@@ -1,8 +1,8 @@
 <template>
-    <div class="flex items-center justify-between gap-5">
+    <div class="flex items-center justify-between shadow-md p-3 gap-5">
         <div class="flex items-center gap-5">
             <ProfileIcon />
-            <p>Logo</p>
+            <p>MILES</p>
         </div>
         <div class="cursor-pointer 2xs:block md:block lg:hidden 2xl:hidden" @click="showMenu = !showMenu">
             <MenuIcon/>
