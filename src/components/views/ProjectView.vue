@@ -22,7 +22,7 @@ const listOfProjects = ref([
     { name: "E-learning site", id: 1, type: "Vue", img_url:learn, link: "https://e-learning-dashboard-31k8xgwp6-nyankson-benjamin.vercel.app" },
     { name: "Mini E-commerce site", id: 2, type: "vue", img_url:eCommerce, link: "https://e-commerce-app-vue.vercel.app/" },
     { name: "Youtube Clone", id: 3, type: "vue", img_url:youtube, link: "https://youtube-clone-k033hvxcs-nyankson-benjamin.vercel.app/", },
-    // { name: "Form Authentication", id: 4, type: "vue", img_url:vueImg, link: "" },
+    { name: "Travelling App", id: 4, type: "vue", img_url:vueImg, link: "https://travelling-app-rho.vercel.app/" },
     // { name: "Form Authentication", id: 5, type: "vue", img_url:vueImg, link: "" },
     // { name: "Form Authentication", id: 6, type: "vue", img_url:vueImg, link: "" },
 ])
