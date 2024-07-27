@@ -55,7 +55,7 @@ const links = [{
     name:"Facebook", link:"https://web.facebook.com/benjamin.nyankson.7/", logo:facebook,
 },
 {
-    name:"LinkedI", link:"linkedin.com/in/benjamin-nyankson-47806799", logo:linkedin,
+    name:"LinkedI", link:"https://www.linkedin.com/in/benjamin-nyankson-47806799/", logo:linkedin,
 }
 ]
 
