@@ -22,9 +22,6 @@ const alert = useAlertSystem();
 </template>
 
 <style scoped>
-.bg-image {
-  background-image: url('/desktop-wallpaper-portfolio.JPG');
-}
 
 .primary {
   color: #FD6F00;
