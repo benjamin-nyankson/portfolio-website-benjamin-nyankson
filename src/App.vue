@@ -3,13 +3,14 @@ import TopNavBar from "@/components/navbar/TopNavBar.vue";
 import { RouterView } from 'vue-router';
 import AlertComponent from "./components/alert/AlertComponent.vue";
 import { useAlertSystem } from "./stores/store";
+import img from "@/assets/desktop-wallpaper-portfolio.jpg"
 
 const alert = useAlertSystem();
 </script>
 
 <template>
   <div class="relative min-h-screen">
-    <div class="absolute inset-0 bg-cover bg-center opacity-50 bg-image"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-50 bg-image" :style="{backgroundImage:(`url(${img})`)}"></div>
     <div class="relative z-10 w-3/4 m-auto">
       <TopNavBar />
       <TransitionGroup name="list" tag="div">
@@ -22,7 +23,7 @@ const alert = useAlertSystem();
 
 <style scoped>
 .bg-image {
-  background-image: url(../src/assets/desktop-wallpaper-portfolio.JPG);
+  background-image: url('/desktop-wallpaper-portfolio.JPG');
 }
 
 .primary {
