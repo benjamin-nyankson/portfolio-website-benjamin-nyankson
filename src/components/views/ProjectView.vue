@@ -1,7 +1,7 @@
 <template>
-    <div class="mt-10">
-        <h1 class="text-2xl pl-28 mb-10">PROJECTS</h1>
-        <div class="flex flex-wrap items-center justify-center">
+    <div class="mt-5">
+        <p class="my-5 text-2xl font-bold">PROJECTS</p>
+        <div class="flex flex-wrap items-center ">
             <div v-for="project in listOfProjects" :key="project.name">
                  <a :href="project.link">
                   <SkillsCard :skill="{name:project.name, value:project.id, img:project.img_url}" :className="project.id === num ?'pulsate':''"/>

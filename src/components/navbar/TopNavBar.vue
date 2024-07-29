@@ -16,12 +16,14 @@
 
 
     </div>
-    <div v-if="showMenu" class="fixed bg-white text-[#0a192f] w-2/3 p-3 shadow-md 2xs:block md:block lg:hidden 2xl:hidden z-[10000]">
+    <Transition name="fade">
+        <div v-if="showMenu" class="fixed bg-white text-[#0a192f] w-2/3 p-3 shadow-md 2xs:block md:block lg:hidden 2xl:hidden z-[10000]">
         <menu v-for="(item, index) in navBarItems" @click="navigate(item.path as string)" class="cursor-pointer">
             <p class="p-2 whitespace-nowrap text-sm"
                 :class="item.path === $route.path ? 'bg-[#FD6F00] text-[#fff] rounded-md' : ''"> {{ item.name }}</p>
         </menu>
     </div>
+    </Transition>
 </template>
 
 <script setup lang="ts">
@@ -67,3 +69,18 @@ router.push(link)
 
 </script>
 
+<style scoped>
+.fade-enter-from{
+  opacity: 0.8;
+  transform: translateY(-100px);
+}
+
+.fade-enter-active{
+  transition: all 0.3s ease-out;
+}
+
+.fade-leave-to{
+  opacity: 0;
+  transform: translateY(100px);
+}
+</style>
