@@ -16,15 +16,23 @@ const alert = useAlertSystem();
       <TransitionGroup name="list" tag="div">
         <AlertComponent v-if="alert.open"/>
       </TransitionGroup>
-      <RouterView/>
+      <RouterView v-slot="{Component}">
+        <Transition name="route" mode="out-in">
+<component  :is="Component"/>
+        </Transition>
+      </RouterView>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 
 .primary {
   color: #FD6F00;
+}
+
+.BG0{
+  background-color: #0a192f;
 }
 
 .list-enter-active,
@@ -35,5 +43,23 @@ const alert = useAlertSystem();
 .list-leave-to {
   opacity: 0;
   transform: translateX(100px);
+}
+
+.route-enter-from{
+  opacity: 0.8;
+  transform: translateX(100px);
+}
+
+.route-enter-active{
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-to{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.route-leave-active{
+  transition: all 0.3s ease-in ;
 }
 </style>
