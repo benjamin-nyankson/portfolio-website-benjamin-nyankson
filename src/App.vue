@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import TopNavBar from "@/components/navbar/TopNavBar.vue";
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute } from 'vue-router';
 import AlertComponent from "./components/alert/AlertComponent.vue";
 import { useAlertSystem } from "./stores/store";
 import img from "@/assets/desktop-wallpaper-portfolio.jpg"
+import { watch } from "vue";
 
 const alert = useAlertSystem();
+const route = useRoute()
+watch(route,(val)=>{
+  window.document.title = val.path.length>1 && (val.path.startsWith("/"))  ? "Benjamin Nyankson - " + val.path.replace("/","") : "Benjamin Nyankson"
+  // window.document.title =   text
+})
 </script>
 
 <template>

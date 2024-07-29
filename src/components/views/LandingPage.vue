@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-32 flex items-center gap-5">
+    <div class="mt-10 flex items-center gap-5">
         <div class="mb-5">
             <p>Hi I am</p>
             <p class="text-[#FD6F00] text-2xl font-bold">Benjamin Nyankson</p>
@@ -15,7 +15,7 @@
                 and Vue.js.</p>
             <ButtonComponent text="Contact me" class="mt-10" @submit="open = true" />
         </div>
-        <div class="w-full flex items-center flex-col gap-3 sm:hidden md:hidden lg:flex">
+        <div class="w-full flex items-center flex-col gap-3 2xs:hidden xs:hidden sm:hidden md:hidden lg:flex">
             <img src="../../assets//images//profile_img.jpeg" alt="">
           <SocialMedia/>
         </div>
