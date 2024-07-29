@@ -10,7 +10,6 @@ const alert = useAlertSystem();
 const route = useRoute()
 watch(route,(val)=>{
   window.document.title = val.path.length>1 && (val.path.startsWith("/"))  ? "Benjamin Nyankson - " + val.path.replace("/","") : "Benjamin Nyankson"
-  // window.document.title =   text
 })
 </script>
 
@@ -52,8 +51,8 @@ watch(route,(val)=>{
 }
 
 .route-enter-from{
-  opacity: 0.8;
-  transform: translateX(100px);
+  opacity: 0.2;
+  /* transform: translateY(100px); */
 }
 
 .route-enter-active{
@@ -62,7 +61,7 @@ watch(route,(val)=>{
 
 .route-leave-to{
   opacity: 0;
-  transform: translateX(-100px);
+  /* transform: translateY(-100px); */
 }
 
 .route-leave-active{

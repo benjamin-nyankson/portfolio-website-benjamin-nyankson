@@ -16,7 +16,7 @@
             <ButtonComponent text="Contact me" class="mt-10" @submit="open = true" />
         </div>
         <div class="w-full flex items-center flex-col gap-3 2xs:hidden xs:hidden sm:hidden md:hidden lg:flex">
-            <img src="../../assets//images//profile_img.jpeg" alt="">
+            <img src="../../assets//images//profile_img.jpg" alt="" class="rounded-lg border-4">
           <SocialMedia/>
         </div>
         <ModalComponent :open="open" title="Contact Me" @close="open = false">
