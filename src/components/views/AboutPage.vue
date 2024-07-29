@@ -19,7 +19,7 @@
                 approach:</p>
 
             <p v-for="item in approaches" class="mt-2 text-lg">
-                <span class="primary text-lg">{{ item.title }} </span>
+                <span class="primary text-lg"> {{ item.title }} </span>
                 <span> &nbsp;{{ item.content }}</span>
             </p>
 
