@@ -17,6 +17,7 @@ import learn from "@/assets/e-lerning.png";
 import youtube from "@/assets/youtube-clone.png"
 import eCommerce from "@/assets/e-commerce.png"
 import reactImg from "@/assets/react-png.png"
+import timeline from "@/assets/timeline.png"
 import SkillsCard from '../SkillsCard.vue';
 import  useSetInterval  from '@/composables/useSetInterval';
 
@@ -24,7 +25,8 @@ const listOfProjects = ref([
     { name: "E-learning", id: 1, type: "Vue", img_url:learn, link: "https://e-learning-dashboard-31k8xgwp6-nyankson-benjamin.vercel.app" },
     { name: "Mini E-commerce", id: 2, type: "vue", img_url:eCommerce, link: "https://e-commerce-app-vue.vercel.app/" },
     { name: "Youtube Clone", id: 3, type: "vue", img_url:youtube, link: "https://youtube-clone-k033hvxcs-nyankson-benjamin.vercel.app/", },
-    { name: "Travelling App", id: 4, type: "vue", img_url:reactImg, link: "https://travelling-app-rho.vercel.app/" },
+    { name: "Project Time Line", id: 4, type: "vue", img_url:timeline, link: "https://time-line-livid.vercel.app/" },
+    { name: "Travelling App", id: 5, type: "vue", img_url:reactImg, link: "https://travelling-app-rho.vercel.app/" },
 
 ])
 
