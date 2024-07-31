@@ -8,9 +8,9 @@
             <MenuIcon/>
         </div>
         <div class="flex gap-5 items-center justify-center 2xs:hidden xs:hidden sm:hidden md:hidden lg:flex">
-            <div v-for="(item, index) in navBarItems" @click="navigate(item.path as string)" class="cursor-pointer">
+            <div v-for="(item, index) in navBarItems" @click="navigate(item.path as string)" class="cursor-pointer border border-[transparent] ">
                 <p class="p-2 whitespace-nowrap text-sm"
-                    :class="item.path === $route.path ? 'bg-[#FD6F00] text-[#fff] rounded-md' : ''"> {{ item.name }}</p>
+                    :class="item.path === $route.path ? 'bg-[#FD6F00] text-[#fff] rounded-md border border-[transparent]' : 'border-[transparent] hover:border hover:border-[#ffffff] rounded-md'"> {{ item.name }}</p>
             </div>
         </div>
 
